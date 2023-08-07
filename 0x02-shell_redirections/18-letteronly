@@ -1,0 +1,2 @@
+#!/bin/bash
+grep -i "^char" /etc/ssh/sshd_config
