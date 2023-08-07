@@ -1,2 +1,2 @@
-#!/bin/bash
-tail . | sort | pr 
+#!bin/bash
+ls -lt | head |sort 
