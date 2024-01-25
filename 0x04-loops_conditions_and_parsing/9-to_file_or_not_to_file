@@ -15,7 +15,8 @@ do
                         echo "school is a regular file"
 		fi
 		break
-	else
-		echo "school file does not exist"
+	elif [ ! -e "$re" ]; then
+	 	echo "school file does not exist"
+		break
 	fi
 done
