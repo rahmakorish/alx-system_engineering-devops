@@ -3,7 +3,7 @@
 
 for file in *
 do
-	if [[ -d "${entry}" && "${entry}" =~ ^\. ]] ; then
+	if [[ -d "${file}" && "${file}" =~ ^\. ]] ; then
 		continue
 	else
 		echo "${file#[0-9]*-}"
