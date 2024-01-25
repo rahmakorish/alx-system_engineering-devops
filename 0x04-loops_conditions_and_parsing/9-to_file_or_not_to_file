@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#basic for loop
+
+for file in *
+do
+	if (("$file" == "school")); then
+		echo "school file exists"
+			
+	else
+		continue
+	fi
+done
