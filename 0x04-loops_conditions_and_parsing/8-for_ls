@@ -3,6 +3,6 @@
 
 for file in *
 do
-	echo "${file#[0-9]-}"
+	echo "${file#[0-9]*-}"
 
 done
