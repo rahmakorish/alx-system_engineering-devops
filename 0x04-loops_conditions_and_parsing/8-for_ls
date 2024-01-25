@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#basic for loop 
+for file in *
+do
+	echo "${file:2:${#file}}"
+done
