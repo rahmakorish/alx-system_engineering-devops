@@ -8,7 +8,7 @@ do
 		echo "school file exists"
 		if [ -s "$re" ]; then
 			echo "school file is not empty"
-		else
+		elif [ ! -s "$file" ]; then
 			echo "school file is empty"
 		fi
 		if [ -f "$re" ]; then
