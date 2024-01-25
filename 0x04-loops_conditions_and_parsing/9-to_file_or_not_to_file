@@ -1,12 +1,21 @@
 #!/usr/bin/env bash
 #basic for loop
 
+re="school"
 for file in *
 do
-	if (("$file" == "school")); then
+	if [ -e "$re" ]; then 
 		echo "school file exists"
-			
+		 if [ -s $file ]; then
+                        echo "school file is not empty"
+		else
+			echo "school file is empty"
+		fi
+		if [ -f $file ]; then
+                        echo "school is a regular file"
+		fi
+		break
 	else
-		continue
+		echo "school file does not exist"
 	fi
 done
