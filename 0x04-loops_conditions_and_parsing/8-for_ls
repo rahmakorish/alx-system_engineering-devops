@@ -6,6 +6,6 @@ do
 	if [[ -d "${file}" && "${file}" =~ ^\. ]] ; then
 		continue
 	else
-		echo "${file#[0-9]*-}"
+		echo "${file#*-}"
 	fi
 done
