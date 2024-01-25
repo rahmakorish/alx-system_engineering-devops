@@ -6,14 +6,14 @@ for file in *
 do
 	if [ -e "$re" ]; then 
 		echo "school file exists"
-		if [ -s "$file" ]; then
+		if [ -s "$re" ]; then
 			echo "school file is not empty"
 		else
 			echo "school file is empty"
 		fi
-		if [ -d "$file" ]; then
+		if [ -f "$re" ]; then
                         echo "school is a regular file"
-		elif [  -f "$file" ]; then
+		elif [ -d "$re" ]; then
 			break
 		fi
 		break
