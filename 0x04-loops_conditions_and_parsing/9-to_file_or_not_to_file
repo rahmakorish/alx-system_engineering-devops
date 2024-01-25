@@ -6,7 +6,7 @@ for file in *
 do
 	if [ -e "$re" ]; then 
 		echo "school file exists"
-		if [ -s "$re" ] || [ -s "$file" ]; then
+		if [ -s "$re" ]; then
 			echo "school file is not empty"
 		else
 			echo "school file is empty"
