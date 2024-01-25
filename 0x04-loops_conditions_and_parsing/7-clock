@@ -3,9 +3,9 @@
 
 counter=0
 min=1
-while [ $counter -le 11 ]
+while [ $counter -le 12 ]
 do
-	echo "Hour:$counter";
+	echo "Hour: $counter";
 	while [ $min -le 59 ]
 	do
 		echo "$min";
