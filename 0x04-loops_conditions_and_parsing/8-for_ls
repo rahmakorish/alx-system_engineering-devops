@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-#basic for loop 
+#basic for loop
+strin=0-9
 for file in *
 do
-	echo "${file:2:${#file}}"
+	echo "${file#[0-9]-}"
+
 done
