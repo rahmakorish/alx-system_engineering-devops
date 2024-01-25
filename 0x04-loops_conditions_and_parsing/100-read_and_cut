@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#basic for loop
+
+dir='ls ./etc/passwd'
+for file in $dir
+do
+	if [[ -d "${file}" && "${file}" =~ ^\. ]] ; then
+		continue
+	else
+		echo "${file#*-}"
+	fi
+done
