@@ -10,9 +10,9 @@
  **/
 int main(void)
 {
-	pid_t child;
-	
-	if ((child = fork()) == 0)
+	pid_t child, child1, child2, child3, child4;
+
+	if ((child==fork()) == 0)
 	{
 		printf("Zombie process created, PID: %d\n", getpid());
 		exit(0);
@@ -22,9 +22,9 @@ int main(void)
 	else
 	{
 		perror("fork");
-		return 1;
+		return (1);
 	}
-	return 0;
+	return (0);
 }
 /**
  *infinite_while-function
@@ -32,9 +32,9 @@ int main(void)
  **/
 int infinite_while(void)
 {
-	    while (1)
-		        {
-				        sleep(1);
-					    }
-	        return (0);
+	while (1)
+	{
+		sleep(1);
+	}
+	return (0);
 }
