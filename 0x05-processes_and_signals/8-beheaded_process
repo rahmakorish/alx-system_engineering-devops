@@ -2,4 +2,4 @@
 #kill highlander
 
 pid=$(pgrep 7-highlander)
-kill -9 "$pid"
+pkill -f "$pid"
