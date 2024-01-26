@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-ps -eHF --forest | grep bash
+#grep bash
 # shellcheck disable=SC2009
+ps -eHF --forest | grep bash
