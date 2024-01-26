@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #display PID
 
-ps -eHF --forest
+ps -auxx --forest
